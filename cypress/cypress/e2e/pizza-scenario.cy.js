@@ -38,7 +38,18 @@ describe('QP-01 A custom pizza reaches the admin list', () => {
     cy.get('input#pizza-name').should('have.value', pizzaName)
 
     // Step 4: ask for a pizza
+    cy.intercept('POST', '/api/pizza').as('pizza')
     cy.get('button[name="pizza-please"]').click()
+    cy.wait('@pizza').its('response.statusCode').should('eq', 200)
+    cy.get('@pizza').then(({ request, response }) => {
+      expect(request.body.maxCaloriesPerSlice).to.equal(600)
+      const { pizza, calories } = response.body
+      cy.contains('#recommendations p', 'Tool:')
+        .should('have.text', 'Tool: ' + pizza.tool)
+      cy.contains('#recommendations p', 'Calories per slice:')
+        .should('have.text', 'Calories per slice: ' + calories)
+      cy.wrap(pizza.tool).as('tool')
+    })
     cy.get('#recommendations').should('contain', 'Name: ' + pizzaName)
     cy.contains('#recommendations p', 'Tool:')
       .should('not.contain', 'Knife')
