@@ -24,8 +24,8 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 ## Part 3: Robot Framework
 - robot --version: Robot Framework 7.5.1 (Python 3.11.9 on win32)
 - Step 3.2, failure message for the wrong title: Title should have been 'Web Form' but was 'Web form'. (1 test, 0 passed, 1 failed, and the log showed selenium-screenshot-1.png under the red step)
-- Step 3.8, run 1, result, elapsed time and pizza name:
-- Step 3.8, run 2, result, elapsed time and pizza name:
+- Step 3.8, run 1, result, elapsed time and pizza name: PASS (1 test, 1 passed, 0 failed), 00:00:10.639, Lab Pizza 20261122-142253 (tool Scissors, 325 calories per slice). My first headless try before this one failed with `Element 'id:svelte-announcer' did not appear in 10 seconds.` because Go To on /admin already took about 6 seconds that time. I ran the same command again and it passed, that is the run1 folder.
+- Step 3.8, run 2, result, elapsed time and pizza name: PASS (1 test, 1 passed, 0 failed), 00:00:09.749, Lab Pizza 20261122-142315 (tool Scissors, 450 calories per slice)
 
 ## Part 4: Cypress
 - node --version, npm --version and npx cypress version:
