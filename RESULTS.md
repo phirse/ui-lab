@@ -28,7 +28,7 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 - Step 3.8, run 2, result, elapsed time and pizza name: PASS (1 test, 1 passed, 0 failed), 00:00:09.749, Lab Pizza 20261122-142315 (tool Scissors, 450 calories per slice)
 
 ## Part 4: Cypress
-- node --version, npm --version and npx cypress version:
+- node --version, npm --version and npx cypress version: v22.20.0, 10.9.3, Cypress package version 16.2.1 and Cypress binary version 16.2.1 (Electron 41.7.0, bundled Node 24.15.0). npm 10 gave no install-scripts warning, and npx cypress info found Chrome 157.0.8103.79
 - Step 4.3, failure message for the wrong title:
 - Step 4.6, tool and calories in the answer of POST /api/pizza:
 - Step 4.7, the line of the admin list that shows your pizza:
