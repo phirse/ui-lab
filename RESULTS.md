@@ -22,7 +22,7 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 | 7    | Lab Pizza 20261122-141223 (tool=Scissors, ingredients_number=6) was the 5th line, four newer pizzas from other users were above it. Same tool as step 4 | Pass |
 
 ## Part 3: Robot Framework
-- robot --version:
+- robot --version: Robot Framework 7.5.1 (Python 3.11.9 on win32)
 - Step 3.2, failure message for the wrong title:
 - Step 3.8, run 1, result, elapsed time and pizza name:
 - Step 3.8, run 2, result, elapsed time and pizza name:
