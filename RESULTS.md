@@ -23,7 +23,7 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 
 ## Part 3: Robot Framework
 - robot --version: Robot Framework 7.5.1 (Python 3.11.9 on win32)
-- Step 3.2, failure message for the wrong title:
+- Step 3.2, failure message for the wrong title: Title should have been 'Web Form' but was 'Web form'. (1 test, 0 passed, 1 failed, and the log showed selenium-screenshot-1.png under the red step)
 - Step 3.8, run 1, result, elapsed time and pizza name:
 - Step 3.8, run 2, result, elapsed time and pizza name:
 
