@@ -5,10 +5,10 @@ Tool parts that I chose: Part 3 (Robot Framework) and Part 4 (Cypress)
 ## Part 0
 - Step 0.1, Chrome version: Google Chrome 157.0.8103.79 (Official Build) (64-bit)
 - Step 0.3, ChromeDriver version: ChromeDriver 157.0.8103.79 (6dc9bc3bdaea5c35ed6d41fceab2f7a3a2227c4f-refs/branch-heads/8103@{#1574}), at C:\drivers\chromedriver-win64\chromedriver.exe
-- Step 0.4, locator of Pizza, Please!:
-- Step 0.4, locator of Excluded tools:
-- Step 0.4, locator of Must be vegetarian:
-- Step 0.4, locator of Custom Pizza Name:
+- Step 0.4, locator of Pizza, Please!: `button[name="pizza-please"]`
+- Step 0.4, locator of Excluded tools: `select` (the only select on the page, it has no id and its label points to `countries_multiple` which does not exist)
+- Step 0.4, locator of Must be vegetarian: `#default-checkbox`
+- Step 0.4, locator of Custom Pizza Name: `input#pizza-name` (`#pizza-name` finds 2 elements after Pizza, Please! because the h2 of the answer has the same id)
 - Step 0.5, pizza name, tool and calories of the run by hand:
 
 | Step | Actual result | Pass or fail |
